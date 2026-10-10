@@ -1145,6 +1145,11 @@ button:focus-visible {
     font-size: 18px;
     line-height: 30px;
   }
+
+  /* лінія у футері темна, як у макетах планшета й мобільного */
+  .footer-list::before {
+    background-color: var(--color-dark);
+  }
 }
 
 /* ==========================================================
@@ -1216,6 +1221,11 @@ button:focus-visible {
     position: relative;
     z-index: 10;
     width: auto;
+  }
+
+  /* на мобільному лого стоїть на темному фото (без білої смуги), тому робимо його білим, як у макеті */
+  .logo img {
+    filter: brightness(0) invert(1);
   }
 
   .menu-toggle {
