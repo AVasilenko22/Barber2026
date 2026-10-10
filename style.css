@@ -803,7 +803,7 @@ button:focus-visible {
   width: 60px;
   height: 1px;
   margin-right: 12px;
-  background-color: var(--color-accent);
+  background-color: var(--color-dark);
 }
 
 .footer-link {
@@ -1144,11 +1144,6 @@ button:focus-visible {
     align-self: start;
     font-size: 18px;
     line-height: 30px;
-  }
-
-  /* лінія у футері темна, як у макетах планшета й мобільного */
-  .footer-list::before {
-    background-color: var(--color-dark);
   }
 }
 
