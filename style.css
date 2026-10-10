@@ -1490,3 +1490,23 @@ button:focus-visible {
     align-self: flex-end;
   }
 }
+
+/* ==========================================================
+   ВУЗЬКІ ТЕЛЕФОНИ: до 400px
+   Більше місця для назв у списку цін, щоб вони рідше переносились
+   ========================================================== */
+@media (max-width: 400px) {
+  .prices-list,
+  .prices-list:first-of-type {
+    padding: 20px 20px 0;
+  }
+
+  .prices-list + .prices-list {
+    padding: 0 20px 20px;
+  }
+
+  .prices-text:first-child::after {
+    flex-basis: 16px;
+    min-width: 16px;
+  }
+}
